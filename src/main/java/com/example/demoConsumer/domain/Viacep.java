@@ -4,23 +4,14 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @Setter
 @Getter
 @ToString
-public class Viacep {
+public class Viacep implements Serializable {
 
-//    {
-//        "cep": "01001-000",
-//            "logradouro": "Praça da Sé",
-//            "complemento": "lado ímpar",
-//            "bairro": "Sé",
-//            "localidade": "São Paulo",
-//            "uf": "SP",
-//            "ibge": "3550308",
-//            "gia": "1004",
-//            "ddd": "11",
-//            "siafi": "7107"
-//    }
+    private static final long serialVersionUID = 7536379133171483585L;
     private String cep;
     private String logradouro;
     private String complemento;
